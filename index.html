@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <style>
+      .login-circle {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: grey;
+      margin-top: 20px;
+      }
+      /* Add styles here to change the circle color after login */
+      /* .login-success .login-circle { background-color: green; } */
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Login Form</h2>
+      <form id="loginForm">
+	<label for="name">Name:</label><br>
+	<input type="text" id="name" name="name"><br>
+	<label for="password">Password:</label><br>
+	<input type="password" id="password" name="password"><br><br>
+	<button type="submit">Login</button>
+      </form>
+      <div class="login-circle"></div>
+    </div>
+
+    <script>
+      // JavaScript code to handle login and change circle color
+      // This is just a placeholder, real login logic needs to be implemented
+      document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      // Add logic here to check login credentials
+      // If login is successful, change the circle color
+      // document.querySelector('.login-circle').style.backgroundColor = 'green';
+      });
+    </script>
+  </body>
+</html>
